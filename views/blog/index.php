@@ -3,8 +3,8 @@
     <div class="card">
         <div class="card-body mb-3">
             <h2><?= $post->title  ?></h2>
-            <small><?= $post->created_at ?></small>
-            <p><?= $post->content ?></p>
+            <small class="badge badge-info">Publié le <?= $post->getCreatedAt() ?></small>
+            <p><?= $post->getExcerpt() ?></p>
             <a href="/posts/<?= $post->id ?>" class="btn btn-primary">Lire plus</a>
         </div>
     </div>
