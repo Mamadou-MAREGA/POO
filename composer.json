@@ -1,0 +1,17 @@
+{
+    "name": "pc/projet-poo",
+    "authors": [
+        {
+            "name": "Mamadou MAREGA",
+            "email": "hamshakour93@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Router\\": "routes/",
+            "App\\": "app/",
+            "Database\\": "database/"
+        }
+    },
+    "require": {}
+}
