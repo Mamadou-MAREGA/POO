@@ -2,6 +2,8 @@
 
     namespace Router;
 
+    use App\Exceptions\NotFoundExceptions;
+
     class Router {
 
         public $url;
@@ -32,7 +34,7 @@
                 }
             }
 
-            return header ('HTTP/1.0 404 not found');
+            throw new NotFoundExceptions("Oups cette page n'existe pas ");
         }
     }
 
